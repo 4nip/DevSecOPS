@@ -70,8 +70,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "8110a013-026a-440c-bf05-88702c1ea43a",
             "zIndex": -1,
+            "id": "8110a013-026a-440c-bf05-88702c1ea43a",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "INTERNAL APPLICATION NETWORK",
@@ -141,8 +141,8 @@
                 "text": "Customer Browser "
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -239,11 +239,25 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": [],
+              "threats": [
+                {
+                  "id": "ea3efb42-5f26-4c5c-aada-b6d69c1d3205",
+                  "title": "Spoofing of Customer Identity",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Attacker bisa menyamar sebagai customer sah dengan mencuri credential lewat phishing atau credential stuffing saat login.",
+                  "mitigation": "MFA, rate limiting login, deteksi anomali login (device/IP baru).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 4,
                 "repudiation": 0
               }
             }
@@ -262,8 +276,8 @@
                 "text": "Admin Browser "
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -360,11 +374,25 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": [],
+              "threats": [
+                {
+                  "id": "2fce94d0-92a8-49a3-b8c8-81391c40ec8d",
+                  "title": "Spoofing of Admin Identity",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Spoofing",
+                  "description": "Attacker menyamar sebagai admin untuk mengakses panel kelola produk/order lewat credential curian.",
+                  "mitigation": "MFA wajib untuk akun admin, IP whitelisting, session timeout pendek.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 1,
                 "repudiation": 0
               }
             }
@@ -383,8 +411,8 @@
                 "text": "Payment Gateaway"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -481,9 +509,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "4f0078f7-e149-4694-81d6-dd793a332790",
+                  "title": "Repudiation of Payment Transaction",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Payment Gateway atau attacker bisa menyangkal transaksi karena bukti transaksi tidak diverifikasi dengan kuat.",
+                  "mitigation": "Simpan signed transaction log dari payment gateway sebagai bukti non-repudiation.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -500,8 +546,8 @@
                 "text": "React Frontend"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -598,15 +644,29 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "fbfba94a-a402-4833-807e-d9213eba6fe2",
+                  "title": "Tampering of Client-Side Code",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attacker memodifikasi kode/bundle JS di sisi client (misal lewat XSS atau supply chain attack pada dependency) untuk mencuri data user atau inject script berbahaya.",
+                  "mitigation": "Terapkan Content Security Policy (CSP), Subresource Integrity (SRI) untuk script eksternal, sanitasi input/output secara konsisten.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 0,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -628,8 +688,8 @@
                 "text": "Note.js\nREST API"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -726,19 +786,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "aee9ca2b-5b93-448d-9618-1c278e314c2e",
+                  "title": "Elevation of Privilege via Broken Access Control",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Elevation of privilege",
+                  "description": "Customer biasa bisa akses endpoint admin karena role tidak divalidasi di server, hanya mengandalkan UI hiding.",
+                  "mitigation": "RBAC server-side di setiap endpoint, audit permission berkala.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "8ae394f0-40c4-47de-a837-52541b5b6a30",
+                  "title": "Denial of Service via API Flooding",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Attacker membanjiri endpoint API dengan request masif sehingga service down/lambat.",
+                  "mitigation": "Rate limiting, request throttling, WAF di depan API.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -756,8 +843,8 @@
                 "text": "Email Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -854,12 +941,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "22b7d8bf-929b-4007-aceb-97a650f72d3f",
+                  "title": "Spoofing of Email Sender Domain",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attacker mengirim email palsu yang menyamar dari domain toko online (misal untuk phishing customer minta re-login atau update payment info).",
+                  "mitigation": "Terapkan SPF, DKIM, dan DMARC pada domain pengirim email.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -876,11 +985,13 @@
                 "text": "MySQL DB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -977,17 +1088,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": [],
+              "threats": [
+                {
+                  "id": "29a1d08f-a50f-4d11-9b34-309d82e88350",
+                  "title": "Information Disclosure via SQL Injection",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "Data sensitif (user, transaksi) bocor lewat SQL Injection karena query tidak di-parameterize.",
+                  "mitigation": "Prepared statements/ORM, least privilege DB user, enkripsi data at-rest.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             }
@@ -1006,11 +1131,13 @@
                 "text": "Redis Cache"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1107,18 +1234,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": [],
+              "threats": [
+                {
+                  "id": "20feef9b-1f0b-4917-a648-a14d070efd79",
+                  "title": "Denial of Service via Cache Flooding",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Attacker membanjiri Redis dengan request session/cache palsu sehingga memory habis dan service crash.",
+                  "mitigation": "Max memory policy + eviction policy, koneksi Redis dibatasi hanya dari internal network.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 0
+                "denialOfService": 1
               }
             }
           },
@@ -1126,7 +1267,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1147,18 +1289,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "4dcd74b8-241c-4997-8c4b-8afc461bcd08",
+                  "title": "Information Disclosure via Weak Transport Encryption",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data registrasi/login (email, password) bisa disadap kalau HTTPS di-downgrade (SSL stripping) atau cipher yang dipakai lemah/outdated.",
+                  "mitigation": "Paksa HTTPS dengan HSTS header, disable cipher lemah, redirect otomatis dari HTTP ke HTTPS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "8110a013-026a-440c-bf05-88702c1ea43a"
               ],
               "threatFrequency": {
                 "tampering": 1,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             },
@@ -1228,7 +1384,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1249,13 +1406,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "625d6091-d451-42cf-8214-d124dc1fd07b",
+                  "title": "Tampering of Order Confirmation Data Before Sending",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Data order confirmation (item, harga, alamat) yang dikirim ke Email Service bisa dimodifikasi sebelum email terkirim, menyebabkan customer terima info order yang salah/palsu.",
+                  "mitigation": "Validasi data order di sisi API sebelum diteruskan ke Email Service, gunakan internal message signing antar service.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Order Confirmation"
@@ -1268,13 +1444,24 @@
             "target": {
               "cell": "c34a9252-a25a-48aa-80ac-38df9d5cfec8",
               "port": "486694a8-fd6c-4c2d-a558-ba09208ea505"
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1295,16 +1482,35 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "c9491ba3-7747-4c53-8ea1-7c0e5e10d662",
+                  "title": "Information Disclosure via Unencrypted DB Channel",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data transaksi bocor saat transit ke DB kalau koneksi tidak dienkripsi (plain TCP, tanpa TLS).",
+                  "mitigation": "Gunakan TLS untuk koneksi DB, isolasi network (VPC/private subnet).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "8110a013-026a-440c-bf05-88702c1ea43a",
                 "c1b76107-bf73-4d51-abdf-6e0c42aa6e33"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Query / Transaction Data"
@@ -1317,7 +1523,13 @@
             "target": {
               "cell": "cb1aaccf-3cbb-4305-b8af-a3aadbf18a1f",
               "port": "4331e181-4403-46c8-bd09-30c7f77a0c6b"
-            }
+            },
+            "vertices": [
+              {
+                "x": 1220,
+                "y": 250
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1373,7 +1585,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1394,16 +1607,35 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "892ef95b-56e3-442f-9fd7-8060cdb6315c",
+                  "title": "Tampering of Payment Callback Data",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "Data callback pembayaran (status sukses/gagal, amount) bisa dimodifikasi di tengah jalan kalau tidak ada validasi signature, berpotensi manipulasi status transaksi jadi \"paid\" secara curang.",
+                  "mitigation": "Verifikasi HMAC/signature dari payment gateway di setiap callback, validasi amount & transaction ID cocok dengan record internal.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "b66f88d0-c9ff-4f84-9feb-32cc56ee4c3b",
                 "8110a013-026a-440c-bf05-88702c1ea43a"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Payment Callback"
@@ -1487,7 +1719,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1508,15 +1741,29 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "936f3ef2-b233-4a95-8cd6-c2e70811ffc1",
+                  "title": "Tampering of Request Payload in Transit",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Payload request bisa dimodifikasi di tengah jalan kalau TLS misconfigured atau JWT tidak divalidasi integritasnya.",
+                  "mitigation": "Paksa TLS 1.2+, validasi signature JWT di server, schema validation tiap endpoint.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1550,6 +1797,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Muhammad Dhaffa Alfatier",
-    "threatTop": 10
+    "threatTop": 25
   }
 }
