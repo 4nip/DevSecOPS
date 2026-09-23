@@ -55,44 +55,6 @@
           },
           {
             "position": {
-              "x": 400,
-              "y": 100.00000000000352
-            },
-            "size": {
-              "width": 650,
-              "height": 400
-            },
-            "attrs": {
-              "label": {
-                "text": "DMZ"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "fd8112ba-1305-47cc-b1a9-807d788e88d6",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "DMZ",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "a439fb1b-12ad-4e36-800b-ed17e1ccc2f5",
-                "01175fed-5416-4e87-b8c2-25ab540590ec",
-                "1a930de9-b48a-4bf5-bd7a-9a99f32edcff",
-                "5f05e876-8d23-4b24-94e5-e2dab56c185f",
-                "ba592b98-5935-4f26-a7db-ed013d05aa61",
-                "10df7c95-8cc1-4672-8424-9b560663bfbb"
-              ],
-              "containedElements": [
-                "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
-                "f58cd008-d0bc-47ae-b444-b0a3223d294a"
-              ]
-            }
-          },
-          {
-            "position": {
               "x": 1161.9999999999975,
               "y": 160.00000000000352
             },
@@ -598,8 +560,8 @@
           },
           {
             "position": {
-              "x": 862,
-              "y": 340
+              "x": 882,
+              "y": 290.0000000000035
             },
             "size": {
               "width": 110,
@@ -718,8 +680,8 @@
           },
           {
             "position": {
-              "x": 670,
-              "y": 430
+              "x": 730,
+              "y": 460
             },
             "size": {
               "width": 110,
@@ -1115,9 +1077,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "fd8112ba-1305-47cc-b1a9-807d788e88d6"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "HTTPS Register/Login"
@@ -1164,9 +1124,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "fd8112ba-1305-47cc-b1a9-807d788e88d6"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "HTTPS Login/Kelola Produk"
@@ -1212,9 +1170,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "fd8112ba-1305-47cc-b1a9-807d788e88d6"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Data Flow"
@@ -1261,8 +1217,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "b66f88d0-c9ff-4f84-9feb-32cc56ee4c3b",
-                "fd8112ba-1305-47cc-b1a9-807d788e88d6"
+                "b66f88d0-c9ff-4f84-9feb-32cc56ee4c3b"
               ]
             },
             "labels": [
@@ -1368,7 +1323,6 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "fd8112ba-1305-47cc-b1a9-807d788e88d6",
                 "c1b76107-bf73-4d51-abdf-6e0c42aa6e33"
               ]
             },
@@ -1417,7 +1371,6 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "fd8112ba-1305-47cc-b1a9-807d788e88d6",
                 "c1b76107-bf73-4d51-abdf-6e0c42aa6e33"
               ]
             },
