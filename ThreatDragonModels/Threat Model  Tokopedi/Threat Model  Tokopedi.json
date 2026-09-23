@@ -21,12 +21,12 @@
         "cells": [
           {
             "position": {
-              "x": 99.99999999999758,
-              "y": 160.00000000000352
+              "x": 99.9999999999975,
+              "y": 160.00000000000364
             },
             "size": {
               "width": 270,
-              "height": 240
+              "height": 320
             },
             "attrs": {
               "label": {
@@ -43,17 +43,20 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "5f05e876-8d23-4b24-94e5-e2dab56c185f"
+              ],
               "containedElements": [
                 "e3592f35-6d28-4116-9656-9ca3e99a97ef",
-                "40a14794-23b2-4436-8078-986b471b340d"
+                "40a14794-23b2-4436-8078-986b471b340d",
+                "c97fa33d-6272-454f-b667-b819da36f226"
               ]
             }
           },
           {
             "position": {
-              "x": 429.9999999999976,
-              "y": 160.00000000000352
+              "x": 431.9999999999975,
+              "y": 157
             },
             "size": {
               "width": 650,
@@ -86,6 +89,13 @@
                 "f58cd008-d0bc-47ae-b444-b0a3223d294a",
                 "c34a9252-a25a-48aa-80ac-38df9d5cfec8"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -358,8 +368,8 @@
           },
           {
             "position": {
-              "x": 159.99999999999773,
-              "y": 540
+              "x": 159.9999999999975,
+              "y": 390
             },
             "size": {
               "width": 150,
@@ -1214,131 +1224,6 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "702d4dbb-18f5-423a-8dd3-906b7a519104",
-            "source": {
-              "cell": "9ad0140e-d900-4937-bbcf-e6a395d7c4df"
-            },
-            "target": {
-              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
-              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
             "id": "1a930de9-b48a-4bf5-bd7a-9a99f32edcff",
             "source": {
               "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
@@ -1381,6 +1266,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "b66f88d0-c9ff-4f84-9feb-32cc56ee4c3b",
                 "fd8112ba-1305-47cc-b1a9-807d788e88d6"
               ]
             },
@@ -1395,7 +1281,13 @@
             "target": {
               "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
               "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
-            }
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 400
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1495,6 +1387,52 @@
               "port": "4331e181-4403-46c8-bd09-30c7f77a0c6b"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "0a8a902e-f06b-4611-ad93-8f3c3955b8bf",
+            "source": {
+              "cell": "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
+              "port": "88e22a52-33cb-49bb-9609-7f13f193ed1d"
+            },
+            "target": {
+              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
+            }
           }
         ],
         "description": "Mengembangkan aplikasi manajemen toko online "
