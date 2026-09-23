@@ -1120,13 +1120,6 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1557,6 +1550,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Muhammad Dhaffa Alfatier",
-    "threatTop": 9
+    "threatTop": 10
   }
 }
