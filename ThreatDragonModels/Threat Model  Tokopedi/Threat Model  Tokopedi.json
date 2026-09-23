@@ -55,8 +55,8 @@
           },
           {
             "position": {
-              "x": 431.9999999999975,
-              "y": 157
+              "x": 411.9999999999975,
+              "y": 132
             },
             "size": {
               "width": 650,
@@ -80,14 +80,14 @@
               "crossingFlows": [
                 "a439fb1b-12ad-4e36-800b-ed17e1ccc2f5",
                 "01175fed-5416-4e87-b8c2-25ab540590ec",
+                "1a930de9-b48a-4bf5-bd7a-9a99f32edcff",
                 "5f05e876-8d23-4b24-94e5-e2dab56c185f",
                 "ba592b98-5935-4f26-a7db-ed013d05aa61",
                 "10df7c95-8cc1-4672-8424-9b560663bfbb"
               ],
               "containedElements": [
                 "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
-                "f58cd008-d0bc-47ae-b444-b0a3223d294a",
-                "c34a9252-a25a-48aa-80ac-38df9d5cfec8"
+                "f58cd008-d0bc-47ae-b444-b0a3223d294a"
               ]
             },
             "tools": {
@@ -1219,7 +1219,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "fd8112ba-1305-47cc-b1a9-807d788e88d6"
+              ]
             },
             "labels": [
               "Data Flow"
