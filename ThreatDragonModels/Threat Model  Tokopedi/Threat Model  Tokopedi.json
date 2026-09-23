@@ -44,7 +44,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "5f05e876-8d23-4b24-94e5-e2dab56c185f"
+                "5f05e876-8d23-4b24-94e5-e2dab56c185f",
+                "4f73f105-7f53-405f-9d25-df73e85ccc22"
               ],
               "containedElements": [
                 "e3592f35-6d28-4116-9656-9ca3e99a97ef",
@@ -84,6 +85,45 @@
               "containedElements": [
                 "cb1aaccf-3cbb-4305-b8af-a3aadbf18a1f",
                 "58405958-a81d-45a4-8320-b226245a88d6"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 569.9999999999974,
+              "y": 140.0000000000042
+            },
+            "size": {
+              "width": 510,
+              "height": 460
+            },
+            "attrs": {
+              "label": {
+                "text": "DMZ"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "8110a013-026a-440c-bf05-88702c1ea43a",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "DMZ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "a439fb1b-12ad-4e36-800b-ed17e1ccc2f5",
+                "01175fed-5416-4e87-b8c2-25ab540590ec",
+                "ba592b98-5935-4f26-a7db-ed013d05aa61",
+                "10df7c95-8cc1-4672-8424-9b560663bfbb",
+                "5f05e876-8d23-4b24-94e5-e2dab56c185f",
+                "4f73f105-7f53-405f-9d25-df73e85ccc22"
+              ],
+              "containedElements": [
+                "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
+                "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+                "c34a9252-a25a-48aa-80ac-38df9d5cfec8"
               ]
             }
           },
@@ -1077,7 +1117,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "8110a013-026a-440c-bf05-88702c1ea43a"
+              ]
             },
             "labels": [
               "HTTPS Register/Login"
@@ -1124,7 +1166,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "8110a013-026a-440c-bf05-88702c1ea43a"
+              ]
             },
             "labels": [
               "HTTPS Login/Kelola Produk"
@@ -1159,7 +1203,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Order Confirmation",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1173,7 +1217,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Order Confirmation"
             ],
             "id": "1a930de9-b48a-4bf5-bd7a-9a99f32edcff",
             "source": {
@@ -1184,60 +1228,6 @@
               "cell": "c34a9252-a25a-48aa-80ac-38df9d5cfec8",
               "port": "486694a8-fd6c-4c2d-a558-ba09208ea505"
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Payment Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "b66f88d0-c9ff-4f84-9feb-32cc56ee4c3b"
-              ]
-            },
-            "labels": [
-              "Payment Request"
-            ],
-            "id": "5f05e876-8d23-4b24-94e5-e2dab56c185f",
-            "source": {
-              "cell": "c97fa33d-6272-454f-b667-b819da36f226",
-              "port": "bfa61d37-75f8-44cd-a79f-8464d7602f9b"
-            },
-            "target": {
-              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
-              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
-            },
-            "vertices": [
-              {
-                "x": 680,
-                "y": 400
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -1323,7 +1313,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "c1b76107-bf73-4d51-abdf-6e0c42aa6e33"
+                "c1b76107-bf73-4d51-abdf-6e0c42aa6e33",
+                "8110a013-026a-440c-bf05-88702c1ea43a"
               ]
             },
             "labels": [
@@ -1371,7 +1362,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "c1b76107-bf73-4d51-abdf-6e0c42aa6e33"
+                "c1b76107-bf73-4d51-abdf-6e0c42aa6e33",
+                "8110a013-026a-440c-bf05-88702c1ea43a"
               ]
             },
             "labels": [
@@ -1408,7 +1400,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Payment Callback",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1419,20 +1411,88 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "b66f88d0-c9ff-4f84-9feb-32cc56ee4c3b",
+                "8110a013-026a-440c-bf05-88702c1ea43a"
+              ]
             },
             "labels": [
-              "Data Flow"
+              "Payment Callback"
             ],
-            "id": "9315363c-eb92-47d9-879c-89d891b52fc6",
+            "id": "5f05e876-8d23-4b24-94e5-e2dab56c185f",
             "source": {
-              "x": 860,
-              "y": 400
+              "cell": "c97fa33d-6272-454f-b667-b819da36f226",
+              "port": "bfa61d37-75f8-44cd-a79f-8464d7602f9b"
             },
             "target": {
-              "x": 410,
-              "y": 555
-            }
+              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": 400
+              },
+              {
+                "x": 680,
+                "y": 400
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "b66f88d0-c9ff-4f84-9feb-32cc56ee4c3b",
+                "8110a013-026a-440c-bf05-88702c1ea43a"
+              ]
+            },
+            "labels": [
+              "Payment Request"
+            ],
+            "id": "4f73f105-7f53-405f-9d25-df73e85ccc22",
+            "source": {
+              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
+            },
+            "target": {
+              "cell": "c97fa33d-6272-454f-b667-b819da36f226",
+              "port": "e494cd5e-f52d-4c41-8eea-401cb3a84aee"
+            },
+            "vertices": [
+              {
+                "x": 620,
+                "y": 470
+              }
+            ]
           }
         ],
         "description": "Mengembangkan aplikasi manajemen toko online "
