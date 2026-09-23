@@ -55,8 +55,8 @@
           },
           {
             "position": {
-              "x": 411.9999999999975,
-              "y": 132
+              "x": 400,
+              "y": 100.00000000000352
             },
             "size": {
               "width": 650,
@@ -1249,7 +1249,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Payment Request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1266,7 +1266,7 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Payment Request"
             ],
             "id": "5f05e876-8d23-4b24-94e5-e2dab56c185f",
             "source": {
@@ -1434,6 +1434,52 @@
               "port": "4331e181-4403-46c8-bd09-30c7f77a0c6b"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "9315363c-eb92-47d9-879c-89d891b52fc6",
+            "source": {
+              "x": 860,
+              "y": 400
+            },
+            "target": {
+              "x": 410,
+              "y": 555
+            }
           }
         ],
         "description": "Mengembangkan aplikasi manajemen toko online "
