@@ -1,0 +1,29 @@
+{
+  "version": "2.6.2",
+  "release_version": "",
+  "released_at": "",
+  "summary": {
+    "title": "Threat Model  Tokopedi",
+    "owner": "Lutfi hanif",
+    "description": "Aplikasi ini dirancang untuk membantu UMKM membuat usaha mereka majadi lebih mudah dijangkau dan diakses",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Diagram STRIDE baru",
+        "diagramType": "STRIDE",
+        "placeholder": "Deskripsi diagram STRIDE baru",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Mengembangkan aplikasi manajemen toko online "
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Muhammad Dhaffa Alfatier",
+    "threatTop": 0
+  }
+}
