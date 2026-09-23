@@ -74,7 +74,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "a439fb1b-12ad-4e36-800b-ed17e1ccc2f5"
+                "a439fb1b-12ad-4e36-800b-ed17e1ccc2f5",
+                "01175fed-5416-4e87-b8c2-25ab540590ec"
               ],
               "containedElements": [
                 "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
@@ -468,8 +469,8 @@
           },
           {
             "position": {
-              "x": 600,
-              "y": 202.0000000000001
+              "x": 610,
+              "y": 190
             },
             "size": {
               "width": 170,
@@ -1121,15 +1122,54 @@
               "cell": "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
               "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS Login/Kelola Produk",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "fd8112ba-1305-47cc-b1a9-807d788e88d6"
+              ]
+            },
+            "labels": [
+              "HTTPS Login/Kelola Produk"
+            ],
+            "id": "01175fed-5416-4e87-b8c2-25ab540590ec",
+            "source": {
+              "x": 310,
+              "y": 330
+            },
+            "target": {
+              "cell": "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
+              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
             }
           }
         ],
