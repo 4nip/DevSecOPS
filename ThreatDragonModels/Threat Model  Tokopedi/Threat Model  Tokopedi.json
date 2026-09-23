@@ -56,34 +56,6 @@
           },
           {
             "position": {
-              "x": 1460,
-              "y": 130
-            },
-            "size": {
-              "width": 270,
-              "height": 240
-            },
-            "attrs": {
-              "label": {
-                "text": "internet"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "c1b76107-bf73-4d51-abdf-6e0c42aa6e33",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "internet",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            }
-          },
-          {
-            "position": {
               "x": 569.9999999999973,
               "y": 140.0000000000041
             },
@@ -109,13 +81,47 @@
               "crossingFlows": [
                 "a439fb1b-12ad-4e36-800b-ed17e1ccc2f5",
                 "01175fed-5416-4e87-b8c2-25ab540590ec",
+                "ba592b98-5935-4f26-a7db-ed013d05aa61",
+                "10df7c95-8cc1-4672-8424-9b560663bfbb",
                 "5f05e876-8d23-4b24-94e5-e2dab56c185f",
                 "4f73f105-7f53-405f-9d25-df73e85ccc22"
               ],
               "containedElements": [
                 "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
                 "f58cd008-d0bc-47ae-b444-b0a3223d294a",
-                "c34a9252-a25a-48aa-80ac-38df9d5cfec8",
+                "c34a9252-a25a-48aa-80ac-38df9d5cfec8"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1460,
+              "y": 130
+            },
+            "size": {
+              "width": 270,
+              "height": 240
+            },
+            "attrs": {
+              "label": {
+                "text": "internal\n"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "c1b76107-bf73-4d51-abdf-6e0c42aa6e33",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "internal\n",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "ba592b98-5935-4f26-a7db-ed013d05aa61",
+                "10df7c95-8cc1-4672-8424-9b560663bfbb"
+              ],
+              "containedElements": [
                 "cb1aaccf-3cbb-4305-b8af-a3aadbf18a1f",
                 "58405958-a81d-45a4-8320-b226245a88d6"
               ]
@@ -135,8 +141,8 @@
                 "text": "Customer Browser "
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -233,23 +239,9 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "5c33aa32-f6f1-408f-bce6-189479a2acca",
-                  "title": "Stolen Customer Credentials",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Spoofing",
-                  "description": "Penyerang mencoba menggunakan kredensial pengguna lain untuk masuk ke sistem.",
-                  "mitigation": "Gunakan password yang kuat, hashing password, dan autentikasi tambahan jika diperlukan.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
                 "spoofing": 3,
                 "repudiation": 0
@@ -370,13 +362,17 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [],
+              "threatFrequency": {
+                "spoofing": 0,
+                "repudiation": 0
+              }
             }
           },
           {
             "position": {
-              "x": 159.9999999999975,
-              "y": 390
+              "x": 160,
+              "y": 380
             },
             "size": {
               "width": 150,
@@ -504,8 +500,8 @@
                 "text": "React Frontend"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -602,33 +598,19 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "53b40a1b-20c5-4a84-b01d-3d4786cecf1c",
-                  "title": "Elevation of Privilege",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Elevation of privilege",
-                  "description": "User biasa dapat mencoba mengakses fitur yang hanya diperuntukkan bagi admin.",
-                  "mitigation": "Terapkan Role-Based Access Control (RBAC) dan authorization pada setiap endpoint.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 5,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 0
               }
             }
           },
@@ -749,7 +731,15 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -874,8 +864,8 @@
           },
           {
             "position": {
-              "x": 1246.9999999999975,
-              "y": 220
+              "x": 1535,
+              "y": 180
             },
             "size": {
               "width": 120,
@@ -886,13 +876,11 @@
                 "text": "MySQL DB"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -989,27 +977,13 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": [
-                {
-                  "id": "0605f23c-3850-4560-bd09-0503376cd960",
-                  "title": "Kebocoran Database",
-                  "status": "Open",
-                  "severity": "Critical",
-                  "type": "Information disclosure",
-                  "description": "Data pengguna yang tersimpan dapat bocor apabila database berhasil diakses tanpa izin.",
-                  "mitigation": "Gunakan encryption, access control, dan batasi akses database.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 4,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
@@ -1020,8 +994,8 @@
           },
           {
             "position": {
-              "x": 1246.9999999999975,
-              "y": 302
+              "x": 1535,
+              "y": 262
             },
             "size": {
               "width": 120,
@@ -1139,15 +1113,27 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1168,26 +1154,12 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "5ca9324f-144b-4656-b27b-55a6d8d7ca41",
-                  "title": "Manipulasi Data Login",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "Data autentikasi dapat dimanipulasi selama proses pengiriman.",
-                  "mitigation": "Gunakan HTTPS/TLS dan validasi input.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 3,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": [
                 "8110a013-026a-440c-bf05-88702c1ea43a"
               ],
@@ -1325,58 +1297,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "REST API Request [HTTPS/JWT]",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "REST API Request [HTTPS/JWT]"
-            ],
-            "id": "0a8a902e-f06b-4611-ad93-8f3c3955b8bf",
-            "source": {
-              "cell": "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
-              "port": "88e22a52-33cb-49bb-9609-7f13f193ed1d"
-            },
-            "target": {
-              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
-              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
-            },
-            "vertices": [
-              {
-                "x": 760,
-                "y": 330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Query / Transaction Data",
               "description": "",
               "outOfScope": false,
@@ -1388,7 +1308,10 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "8110a013-026a-440c-bf05-88702c1ea43a",
+                "c1b76107-bf73-4d51-abdf-6e0c42aa6e33"
+              ]
             },
             "labels": [
               "Query / Transaction Data"
@@ -1434,7 +1357,10 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "8110a013-026a-440c-bf05-88702c1ea43a",
+                "c1b76107-bf73-4d51-abdf-6e0c42aa6e33"
+              ]
             },
             "labels": [
               "Session / Cache Data"
@@ -1563,6 +1489,67 @@
                 "y": 470
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "REST API Request [HTTPS/JWT]",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "REST API Request [HTTPS/JWT]"
+            ],
+            "id": "0a8a902e-f06b-4611-ad93-8f3c3955b8bf",
+            "source": {
+              "cell": "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
+              "port": "88e22a52-33cb-49bb-9609-7f13f193ed1d"
+            },
+            "target": {
+              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 330
+              },
+              {
+                "x": 800,
+                "y": 330
+              }
+            ]
           }
         ],
         "description": "Mengembangkan aplikasi manajemen toko online "
@@ -1570,6 +1557,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Muhammad Dhaffa Alfatier",
-    "threatTop": 5
+    "threatTop": 9
   }
 }
